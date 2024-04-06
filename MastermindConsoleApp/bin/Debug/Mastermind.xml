@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mastermind</name>
+    </assembly>
+    <members>
+        <member name="T:Mastermind.Game">
+            <summary>
+            Represents the Mastermind game logic.
+            </summary>
+        </member>
+        <member name="M:Mastermind.Game.StartGame">
+            <summary>
+            Starts the Mastermind game.
+            </summary>
+        </member>
+        <member name="M:Mastermind.Game.GenerateSecretCode">
+            <summary>
+            Generates a random 4-digit secret code for the game.
+            </summary>
+        </member>
+        <member name="M:Mastermind.Game.PlayAgain">
+            <summary>
+            Asks the player if they want to play the game again.
+            </summary>
+            <returns>True if the player wants to play again; otherwise, false.</returns>
+        </member>
+        <member name="M:Mastermind.Game.ParseGuess(System.String)">
+            <summary>
+            Parses the user input string into an integer array representing the guess.
+            </summary>
+            <param name="guessString">The string input by the player.</param>
+            <returns>An integer array representing the player's guess.</returns>
+        </member>
+        <member name="M:Mastermind.Game.IsCorrectGuess(System.Int32[])">
+            <summary>
+            Checks if the player's guess matches the secret code.
+            </summary>
+            <param name="guess">The player's guess.</param>
+            <returns>True if the guess is correct; otherwise, false.</returns>
+        </member>
+        <member name="M:Mastermind.Game.PrintHint(System.Int32[])">
+            <summary>
+            Prints the hint based on the player's guess.
+            </summary>
+            <param name="guess">The player's guess.</param>
+        </member>
+        <member name="M:Mastermind.Game.PrintArray(System.Int32[])">
+            <summary>
+            Prints the elements of an array.
+            </summary>
+            <param name="array">The array to print.</param>
+        </member>
+        <member name="T:Mastermind.Program">
+            <summary>
+            Entry point of the Mastermind game console application.
+            </summary>
+        </member>
+        <member name="M:Mastermind.Program.Main(System.String[])">
+            <summary>
+            Main method to start the Mastermind game.
+            </summary>
+            <param name="args">Command-line arguments.</param>
+        </member>
+    </members>
+</doc>
